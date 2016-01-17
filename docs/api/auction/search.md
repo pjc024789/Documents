@@ -10,6 +10,9 @@ __Parameters__
 * __pageKey__ : 페이지 키
 
 
+__ErrorCode__
+* "invalid_parameter"
+
 __Request__
 ```json
 {
@@ -18,7 +21,7 @@ __Request__
 }
 ```
 
-__Response
+__Response__
 ```json
 {
 }
