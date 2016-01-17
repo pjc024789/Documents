@@ -11,7 +11,7 @@ __Parameters__
 
 
 __ErrorCode__
-* "invalid_parameter"
+* "invalidParameter"
 
 __Request__
 ```json
