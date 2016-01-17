@@ -11,7 +11,7 @@ __Response__
 
 __ErrorCode__
 * "already_sold"
-* "invalid_id"
+* "not_exist"
 
 __Request__
 ```json
