@@ -10,8 +10,8 @@ __Parameters__
 __Response__
 
 __ErrorCode__
-* "already_sold"
-* "not_exist"
+* "alreadySold"
+* "notExist"
 
 __Request__
 ```json
