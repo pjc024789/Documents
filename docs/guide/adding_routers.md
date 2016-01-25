@@ -6,7 +6,7 @@
 ```c#
 public class Player {
   public async Task<RespPacket> GetProfile(
-    ReqPacket packet, RespPacket) { 
+    ReqPacket _in, RespPacket _out) { 
     /* .... */
   }
 }
@@ -28,7 +28,7 @@ ReqestPacket에는 특수한 경우(로그인) 등을 제외하고는 대부분이 playerId와 accessT
 ```c#
 public class Player {
   public async Task<RespPacket> SetNickname(
-    ReqPacket packet, RespPacket, Model.Session session) { 
+    ReqPacket _in, RespPacket _out, Model.Session session) { 
     /* .... */
   }
 }
