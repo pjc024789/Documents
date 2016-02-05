@@ -1,7 +1,7 @@
-����� �߰��ϱ�
+﻿라우터 추가하기
 ====
 
-�޼ҵ带 �����ϴ°����� �ڵ����� ������� �߰��˴ϴ�.<br>
+메소드를 정의하는것으로 자동으로 라우팅이 추가됩니다.<br>
 
 ```c#
 public class Player {
@@ -11,19 +11,19 @@ public class Player {
   }
 }
 ```
-�� �޼ҵ�� �ڵ����� /player/getProfile �� ����õ˴ϴ�.
+위 메소드는 자동으로 /player/getProfile 에 라우팅됩니다.
 
-������
+컨벤션
 ----
-* Ŭ���� �̸��� ù���ڴ� �ҹ���ȭ �˴ϴ�.
-* �޼ҵ� �̸��� ù���ڴ� �ҹ���ȭ �˴ϴ�.
-* �ܴ̿� ������� �ʽ��ϴ�.
+* 클래스 이름의 첫글자는 소문자화 됩니다.
+* 메소드 이름의 첫글자는 소문자화 됩니다.
+* 이외는 변경되지 않습니다.
 
-����
+세션
 ----
 
-ReqestPacket���� Ư���� ���(�α���) ���� �����ϰ��� ��κ��� playerId�� accessToken�� �����ϰ� �ֽ��ϴ�.
-�̷��� �����κ��� �ڵ����� ������ ���ɴϴ�.
+ReqestPacket에는 특수한 경우(로그인) 등을 제외하고는 대부분이 playerId와 accessToken을 포함하고 있습니다.
+이러한 정보로부터 자동으로 세션을 얻어옵니다.
 
 ```c#
 public class Player {
@@ -34,4 +34,4 @@ public class Player {
 }
 ```
 
-�� �ڵ忡�� session�� ReqPacket���κ��� �˻��� ���� ��ü�Դϴ�.
+위 코드에서 session은 ReqPacket으로부터 검색된 세션 객체입니다. 이 세션은 처리마다 자동 저장됩니다.
